@@ -858,4 +858,3 @@ QAbstractButton[styleclass="searchauxbutton"] {
 }
 QAbstractButton[styleclass="searchauxbutton"]:disabled { background: none; }
 QWidget[styleclass="tooltip"] { border: 1px solid #646464; background: #333538; }
-QAbstractSpinBox["invalidInput"=true]{ background: red; }
