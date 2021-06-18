@@ -2,10 +2,10 @@
 See Qt documentation:
   - https://doc.qt.io/qt-5/stylesheet.html
   - https://doc.qt.io/qt-5/stylesheet-reference.html
-  - https://doc.qt.io/qt-5/stylesheet-examples.html  
+  - https://doc.qt.io/qt-5/stylesheet-examples.html
 --------------------------------------------------------------------------- */
 /* QDialog ---------------------------------------------------------------- */
-QDialog { background: #333538; }
+QDialog { background: #333538; background: red; }
 
 /* QMainWindow ------------------------------------------------------------
 This adjusts the splitter in the dock widget, not qsplitter
@@ -32,7 +32,7 @@ QSplitter::handle:vertical { height: 4px; }
 /* QStackedWidget -------------------------------------------------------- */
 QStackedWidget { padding: 0px; }
 
-/* Workaround to fix Hyperlink dialog wrap box */ 
+/* Workaround to fix Hyperlink dialog wrap box */
 QStackedWidget QWidget[styleclass='fixBorder'] { border: 1px solid #1e2023; }
 QStackedWidget QPushButton[styleclass='fixHeight'] { height: 18px; }
 /* --- */
@@ -129,7 +129,7 @@ QMenu[styleclass="customQMenuIcon"]::indicator:non-exclusive:checked { left: 0px
 QMenu[styleclass="customQMenuIcon"]::indicator:exclusive:checked { left: 1px; border: 1px solid #646464; height: 20px; width: 18px; }
 QMenu[styleclass="customQMenuIcon"]::icon:checked {
     position: absolute; top: 0px; left: -25px; right: -10px; }
-    
+
 QMenu[styleclass="customQMenuIcon"]::icon:unchecked {
     position: absolute; top: 1px; right: 1px; bottom: 1px; left: -20px;
 }
@@ -312,7 +312,7 @@ QTextEdit {
   color: #cfcfcf;
   border-radius: 0px;
   border: 1px solid #4A4A4A;
-}	
+}
 QTextEdit:hover { }
 QTextEdit:focus { }
 QTextEdit:selected { }
@@ -937,4 +937,4 @@ QAbstractButton[styleclass="searchauxbutton"] {
 }
 QAbstractButton[styleclass="searchauxbutton"]:disabled { background: none; }
 QWidget[styleclass="tooltip"] { border: 1px solid #646464; background: #333538; }
-QAbstractSpinBox["invalidInput"=true]{ background: red}
+QAbstractSpinBox["invalidInput"=true]{ background: red; }
