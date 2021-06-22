@@ -70,6 +70,12 @@ QStatusBar QToolTip
 }
 QStatusBar QLabel { background: transparent; }
 
+/* QProgress Bar ---------------------------------------------------------------
+https://doc.qt.io/qt-5/stylesheet-examples.html#customizing-qprogressbar
+--------------------------------------------------------------------------- */
+QProgressBar { border: 1px solid #000; border-radius: 0px; text-align:center; color: #fff; background: #2d2f31; }
+QProgressBar::chunk { background-color: #141517; width: 20px; }
+
 /* QToolTip ---------------------------------------------------------------
 https://doc.qt.io/qt-5/stylesheet-examples.html#customizing-qtooltip
 --------------------------------------------------------------------------- */
@@ -668,7 +674,7 @@ QHeaderView:disabled { background-color: #646464; border: 1px transparent #32414
 
 /* Horizontal */en
 QHeaderView::section { border: none; }
-QHeaderView::section::horizontal { color: #cfcfcf; background: #000; border: 1px solid #4a4a4a; }
+QHeaderView::section::horizontal { color: #cfcfcf; background: #000; border: 1px solid #4a4a4a; padding: 0px 5px; }
 QHeaderView::section::horizontal:selected,
 QHeaderView::section::horizontal:checked {  }
 QHeaderView::section::horizontal:disabled { }
