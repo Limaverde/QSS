@@ -845,7 +845,7 @@ QAbstractScrollArea
 QAbstractScrollArea:disabled { color: #646464; background: #333538; }
 
 /* --- Workaround for Drawing Sheet Set Properties Dialog --- */
-QAbstractScrollArea#scrollAreaWidgetContents { background-color: #000; }
+QAbstractScrollArea QWidget[styleclass="scrollAreaWidgetContents"] { background: #2D2F31; }
 
 /* --- Custom Styles for Open File Dialog(Drawing Compare) --- */
 QAbstractButton[styleclass="pagebutton"] {
