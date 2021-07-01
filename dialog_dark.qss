@@ -512,10 +512,16 @@ QToolButton::menu-arrow:hover { image: url(":/images/svg_icons/dark/arrow_down.s
 /* --- Custom Classes */
 QToolButton[styleclass="autoWidth"] { width: auto; }
 /* ---- /
+
 /* QToolBar  --- */
-QToolBar { background: none; spacing:0px; }
+QToolBar { spacing: 0px; font: 11px; }
 QToolBar::handle { }
-QToolBar QToolButton { min-width: 22px; min-height: 22px; }
+QToolBar::separator { width: 1px; background: #cfcfcf; }
+QToolBar QToolButton { min-width: 60px; min-height: 22px; padding: 0 5px; font: 11px; border: none; }
+
+QToolBarExtension { background: url(":/images/svg_icons/dark/arrow_down.svg") left center no-repeat; }
+QToolBarExtension:hover { border: 0px;  }
+QToolBarExtension:selected { }
 
 /* ------------------------------------------------------------------------ */
 /* INPUTS - NO FIELDS ----------------------------------------------------- */
