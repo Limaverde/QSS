@@ -873,3 +873,13 @@ QAbstractButton[styleclass="searchauxbutton"] {
 }
 QAbstractButton[styleclass="searchauxbutton"]:disabled { background: none; }
 QWidget[styleclass="tooltip"] { border: 1px solid #646464; background: #333538; }
+
+
+/* --- Licensing Dialog  --- */
+QWidget#widgetWelcomeHeader { background-color: rgb(210, 210, 210); }
+QLabel#lbLicenseInfoWithDay { background-color: rgb(231, 211, 0); }
+QLabel#lbNoInternetHome { background-color:rgb(184,33,21); color:rgb(255,255,255); }
+QGroupBox#groupBox { background-color: red; }
+QLabel#lbUserName { background-color: rgb(210, 210, 210); }
+QLabel#lbUserEmail { background-color: rgb(210, 210, 210); }
+QLabel#lbUserAccountLicenseInfo { background-color: rgb(0, 170, 0); }
