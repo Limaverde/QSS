@@ -544,7 +544,7 @@ QComboBox:hover { border: 1px solid #284c93; }
 QComboBox:focus { }
 QComboBox:on { }
 QComboBox:selected { background: #284c93; }
-QComboBox:disabled { background: #646464; color: #000; }
+QComboBox:disabled { color: #000; }
 QComboBox::indicator {  }
 QComboBox::indicator:alternate { }
 QComboBox::item:alternate {  }
