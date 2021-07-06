@@ -883,3 +883,5 @@ QGroupBox#groupBox { background: #1E2023; }
 QLabel#lbUserName {  }
 QLabel#lbUserEmail { font-weight: bold; margin: 2px 0; }
 QLabel#lbUserAccountLicenseInfo { background: #00AA00; }
+
+QAbstractScrollArea[styleclass="scrollAreaWidgetContents"] { background-color: #2D2F31; border: none; }
