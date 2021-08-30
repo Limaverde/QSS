@@ -598,6 +598,8 @@ QLineEdit:hover { }
 QLineEdit:focus { }
 QLineEdit:selected { }
 
+QLineEdit[styleclass="ga_input"] { background: #fff; }
+
 /* QTabWiget, QTabBar  --------------------------------------------------------------
 https://doc.qt.io/qt-5/stylesheet-examples.html#customizing-qtabwidget-and-qtabbar
 --------------------------------------------------------------------------- */
