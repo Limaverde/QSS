@@ -876,14 +876,14 @@ QAbstractButton[styleclass="searchauxbutton"] {
 QAbstractButton[styleclass="searchauxbutton"]:disabled { background: none; }
 QWidget[styleclass="tooltip"] { border: 1px solid #646464; background: #333538; }
 
-
 /* --- Licensing Dialog  --- */
 QWidget#widgetWelcomeHeader { font-weight: bold; }
 QLabel#lbLicenseInfoWithDay { background: #E7D300; }
 QLabel#lbNoInternetHome { background: #E7D300; color: #FFF; }
-QGroupBox#groupBox { background: #1E2023; }
+QWidget#CFxDlgLicensing2020 QGroupBox#groupBox { background: #333538; border-bottom: 1px solid; }
 QLabel#lbUserName {  }
 QLabel#lbUserEmail { font-weight: bold; margin: 2px 0; }
 QLabel#lbUserAccountLicenseInfo { background: #00AA00; }
-
-QAbstractScrollArea[styleclass="scrollAreaWidgetContents"] { background-color: #2D2F31; border: none; }
+QWidget#CFxDlgLicensing2020 QGroupBox { margin-top: 0px; }
+QWidget#CFxDlgLicensing2020 CFxStackWidgetPage > QScrollArea { border: 0px; }
+QWidget#CFxDlgLicensing2020 QAbstractScrollArea QWidget[styleclass="scrollAreaWidgetContents"] { background: #333538; }
