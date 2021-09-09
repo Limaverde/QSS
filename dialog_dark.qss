@@ -343,7 +343,7 @@ QAbstractSpinBox
 
 /* Workaround to make spinboxes looks like an input (????) -------- */
 /* Dialog example: Patternhatch, breakline  -------- */
-QAbstractSpinBox[styleclass=noIndexSpinBox] { padding: 0px; padding-right: -20px; }
+QAbstractSpinBox[buttonSymbols="2"] { padding: 0px; padding-right: -20px; }
 QAbstractSpinBox:hover {  border: 1px solid #284c93; }
 QAbstractSpinBox:disabled {  background: #646464; color: #000; }
 QAbstractSpinBox:up-button
