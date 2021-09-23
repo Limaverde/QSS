@@ -599,6 +599,9 @@ QLineEdit:focus { }
 QLineEdit:selected { }
 
 QLineEdit[styleclass="ga_input"] { background: #fff; }
+QLineEdit[styleclass="ga_input"][error=false] { background: #fff; }
+QLineEdit[error=true] { background: #960A0A; }
+
 
 /* QTabWiget, QTabBar  --------------------------------------------------------------
 https://doc.qt.io/qt-5/stylesheet-examples.html#customizing-qtabwidget-and-qtabbar
