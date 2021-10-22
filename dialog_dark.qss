@@ -680,7 +680,7 @@ https://doc.qt.io/qt-5/stylesheet-examples.html#customizing-qtableview
 /* QHeaderView ------------------------------------------------------------
 https://doc.qt.io/qt-5/stylesheet-examples.html#customizing-qheaderview
 --------------------------------------------------------------------------- */
-QHeaderView { padding: 0px; margin-right: 0px; height: 20px; border: none; background: red; }
+QHeaderView { padding: 0px; margin-right: 0px; height: 20px; border: none; }
 QHeaderView:disabled { background-color: #646464; border: 1px transparent #32414B; padding: 1px; }
 
 /* Horizontal */en
@@ -840,7 +840,7 @@ QFrame[class="tooltip"]
   color:#000;
 }
 QFrame[class="tooltip"] QLabel { color:#000; }
-QLabel > QFrame::HLine { border: 5px solid red; color: #343434; background: red; }
+QLabel > QFrame::HLine { border: 5px solid red; color: #343434; }
 
 /* QAbstractScrollArea ----------------------------------------------------
 https://doc.qt.io/qt-5/stylesheet-examples.html#customizing-qabstractscrollarea
