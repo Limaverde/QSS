@@ -82,7 +82,6 @@ https://doc.qt.io/qt-5/stylesheet-examples.html#customizing-qtooltip
 QToolTip
 {
   background: #d4d4d4;
-  background: black;
   border: 1px solid #1e2023;
   color: #000000;
   border-radius: 1px;
