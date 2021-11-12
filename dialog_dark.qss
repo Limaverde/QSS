@@ -224,7 +224,7 @@ QRadioButton::indicator:checked:pressed {  }
 QRadioButton::indicator:checked:disabled { image:url(":/images/svg_icons/dark/radio_check_disable.svg"); }
 
 /* Style created to fix issues when radio are in line */
-QRadioButton[styleclass="inLineRadio"] { margin-right: 4px; }
+QRadioButton[styleclass="inLineRadio"] { margin-right: 6px; }
 
 /* QScrollBar -------------------------------------------------------------
 https://doc.qt.io/qt-5/stylesheet-examples.html#customizing-qscrollbar
