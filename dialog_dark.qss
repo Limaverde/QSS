@@ -174,11 +174,13 @@ QStackedWidget > QWidget > QGroupBox
   font-size: 14px;
   margin-top: 18px;
   color: #cfcfcf;
-  padding: 0px;
   padding: 10px 0;
 }
 QGroupBox[styleclass="noTopMargin"],
 QStackedWidget > QWidget > QGroupBox[styleclass="noTopMargin"] { margin-top: 0px; }
+
+QGroupBox[styleclass="noPadding"],
+QStackedWidget > QWidget > QGroupBox[styleclass="noPadding"] { padding: 0px; }
 
 QGroupBox::title { subcontrol-origin: margin;subcontrol-position:top left; left:0; padding:0; }
 QGroupBox::indicator {   }
