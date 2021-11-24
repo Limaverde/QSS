@@ -570,10 +570,10 @@ QSlider:disabled {  }
 QSlider:focus {  }
 
 /* Horizontal --- */
-QSlider::groove:horizontal { background: none; border: 1px solid #646464; height: 4px; margin: 0px; border-radius: 0px; }
+QSlider::groove:horizontal { background: none; border: 1px solid #646464; height: 4px; margin: 2 0px; border-radius: 0px; padding: 0; }
 QSlider::sub-page:horizontal { background: #000; height: 4px; margin: 0px; border-radius: 0px; }
 QSlider::sub-page:horizontal:disabled { background: #646464; }
-QSlider::handle:horizontal { background: #646464; border: 1px solid #adadad; width: 8px; height: 8px; margin: -8px 10px; border-radius: 0px; }
+QSlider::handle:horizontal { background: #646464; border: 1px solid #adadad; width: 8px; height: 8px; margin: -8px 0; border-radius: 0px; }
 QSlider::handle:horizontal:hover {  background: #adadad;  }
 QSlider::handle:horizontal:focus { }
 
