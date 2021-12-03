@@ -431,7 +431,7 @@ QPushButton::menu-indicator { subcontrol-origin: padding; subcontrol-position: b
 QPushButton:disabled { background: #333538;  border: 1px solid #646464; color: #000; }
 QPushButton:checked {  border: 1px solid #284c93; background: #1E2023;  }
 QPushButton:checked:disabled { border: 1px solid #cfcfcf; color: #000; }
-QPushButton:checked:selected {  }
+QPushButton:checked:selected { }
 QPushButton:pressed { background: #000; }
 QPushButton:hover { color: #fff; border: 1px solid #284c93; background: #1E2023; }
 QPushButton:selected { background: #000; border: 1px solid #284c93;  }
@@ -492,7 +492,7 @@ QToolButton
   /* The subcontrol below is used only in the InstantPopup or DelayedPopup mode */
 }
 QToolButton:pressed { border: 1px solid #284c93; background: #000;   }
-QToolButton:disabled { color: #000; }
+QToolButton:disabled { color: #000; background: #646464; }
 QToolButton:hover { border: 1px solid #284c93; }
 QToolButton:checked { border: 1px solid #284c93; background-color: #000; }
 QToolButton:checked:disabled { }
@@ -548,7 +548,7 @@ QComboBox:hover { border: 1px solid #284c93; }
 QComboBox:focus { }
 QComboBox:on { }
 QComboBox:selected { background: #284c93; }
-QComboBox:disabled { color: #000; }
+QComboBox:disabled { color: #000; background: #646464; }
 QComboBox::indicator {  }
 QComboBox::indicator:alternate { }
 QComboBox::item:alternate {  }
@@ -885,8 +885,8 @@ QWidget[styleclass="tooltip"] { border: 1px solid #646464; background: #333538; 
 
 /* --- Licensing Dialog  --- */
 QWidget#widgetWelcomeHeader { font-weight: bold; }
-QLabel#lbLicenseInfoWithDay { background: #E7D300; }
-QLabel#lbNoInternetHome { background: #E7D300; color: #FFF; }
+QLabel#lbLicenseInfoWithDays { background: #E7D300; }
+QLabel#lbNoInternetHome { background: #B82015; color: #FFF; }
 QLabel#lbUserName {  }
 QLabel#lbUserEmail { font-weight: bold; margin: 2px 0; }
 QLabel#lbUserAccountLicenseInfo { background: #00AA00; }
