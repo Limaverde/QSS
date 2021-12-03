@@ -491,8 +491,8 @@ QToolButton
   /* The subcontrols below are used only in the MenuButtonPopup mode */
   /* The subcontrol below is used only in the InstantPopup or DelayedPopup mode */
 }
-QToolButton:pressed { border: 1px solid #284c93; background: #000;   }
-QToolButton:disabled { color: #000; background: #646464; }
+QToolButton:pressed { border: 1px solid #284c93; background: #000; }
+QToolButton:disabled { color: #3d3d3d; background: #646464; }
 QToolButton:hover { border: 1px solid #284c93; }
 QToolButton:checked { border: 1px solid #284c93; background-color: #000; }
 QToolButton:checked:disabled { }
