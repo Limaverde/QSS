@@ -430,15 +430,19 @@ QPushButton::menu-indicator { subcontrol-origin: padding; subcontrol-position: b
 
 QPushButton:default { border: 1px solid #284c93; background: #333538; }
 QPushButton:hover { color: #fff; border: 1px solid #284c93; background: #1E2023; }
-QPushButton:disabled { background: #646464;  border: 1px solid #646464; color: #3D3D3D; }
+QPushButton:disabled { background: #646464; border: 1px solid #646464; color: #3D3D3D; }
 QPushButton:focus { border: 1px solid #284c93; background: #1E2023; }
 QPushButton:checked { border: 1px solid #1E2023; background: #434343; }
-QPushButton:checked:focus { border: 1px solid #1E2023; background: #434343; }
-QPushButton:checked:disabled { border: 1px solid #CFCFCF; color: #000; }
+QPushButton:checked:focus { border: 1px solid #1E2023; background: #000; }
+QPushButton:checked:disabled { border: 1px solid #CFCFCF; color: #3D3D3D; }
 
 /* Custom Button Styles */
 QPushButton[styleclass="calcButton"] { min-width: auto; }
 QPushButton[styleclass="autoWidth"] { min-width: auto; }
+
+/*Toggle Style*/
+QPushButton[class="toggle"]:!checked { border: 1px solid #1E2023; background: #434343; min-width: auto; }
+QPushButton[class="toggle"]:checked { border: 1px solid #1E2023; background: #000; min-width: auto; }
 
 /* QDialogButtonBox  ----------------------------*/
 QDialogButtonBox > QPushButton
