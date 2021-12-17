@@ -108,15 +108,16 @@ QMenu::indicator { width: 12px; height: 12px; padding-left: 6px; image: url(":/i
   /* non-exclusive indicator = check box style indicator (see QActionGroup::setExclusive) */
   /* exclusive indicator = radio button style indicator (see QActionGroup::setExclusive) */
 }
+QMenu::right-arrow { margin: 5px; image: url(":/images/svg_icons/dark/arrow_right.svg"); height: 12px; width: 12px; }
+
 QMenu::indicator:non-exclusive:unchecked { image: url(""); }
 QMenu::indicator:non-exclusive:unchecked:selected { image: url(""); }
-QMenu::indicator:non-exclusive:checked { image: url(""); }
+QMenu::indicator:non-exclusive:checked { image: url(":/images/svg_icons/dark/checkbox_check.svg"); }
 QMenu::indicator:non-exclusive:checked:selected { image: url(""); }
 QMenu::indicator:exclusive:unchecked { image: url(""); }
 QMenu::indicator:exclusive:unchecked:selected { image: url(""); }
 QMenu::indicator:exclusive:checked { image: url(""); }
 QMenu::indicator:exclusive:checked:selected { image: url(""); }
-QMenu::right-arrow { margin: 5px; image: url(":/images/svg_icons/dark/arrow_right.svg"); height: 12px; width: 12px; }
 
 /* -------  Workaround for Print Preview Dialog RMB buttons looks like in Light UI  ----------------------- */
 QMenu[styleclass="customQMenuIcon"]::item { padding: 4px 24px 4px 35px; border: 1px transparent #646464; }
