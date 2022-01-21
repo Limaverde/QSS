@@ -113,11 +113,11 @@ QMenu::right-arrow { margin: 5px; image: url(":/images/svg_icons/dark/arrow_righ
 QMenu::indicator:non-exclusive:unchecked { image: url(""); }
 QMenu::indicator:non-exclusive:unchecked:selected { image: url(""); }
 QMenu::indicator:non-exclusive:checked { image: url(":/images/svg_icons/dark/checkbox_check.svg"); }
-QMenu::indicator:non-exclusive:checked:selected { image: url(""); }
+QMenu::indicator:non-exclusive:checked:selected { image: url(":/images/svg_icons/dark/checkbox_check.svg"); }
 QMenu::indicator:exclusive:unchecked { image: url(""); }
 QMenu::indicator:exclusive:unchecked:selected { image: url(""); }
-QMenu::indicator:exclusive:checked { image: url(""); }
-QMenu::indicator:exclusive:checked:selected { image: url(""); }
+QMenu::indicator:exclusive:checked { image: url(":/images/svg_icons/dark/checkbox_check.svg"); }
+QMenu::indicator:exclusive:checked:selected { image: url(":/images/svg_icons/dark/checkbox_check.svg"); }
 
 /* -------  Workaround for Print Preview Dialog RMB buttons looks like in Light UI  ----------------------- */
 QMenu[styleclass="customQMenuIcon"]::item { padding: 4px 24px 4px 35px; border: 1px transparent #646464; }
