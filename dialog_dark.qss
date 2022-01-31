@@ -140,7 +140,7 @@ QCheckBox
 }
 QCheckBox:disabled { color: #646464; }
 QCheckBox:hover { color: #fff; }
-QCheckBox:focus { }
+QCheckBox:focus { border: 1px dashed #cfcfcf; outline: none; }
 QCheckBox QWidget:disabled { }
 
 QCheckBox::indicator { height: 12px; width: 12px; border: 1px solid #646464; background:#000; border-radius: 2px; }
@@ -211,7 +211,7 @@ QRadioButton
   outline: none;
   margin-left: -1px;
 }
-QRadioButton:focus {   }
+QRadioButton:focus { border: 1px dashed #cfcfcf; outline: none; }
 QRadioButton:disabled { color: #646464; }
 QRadioButton:hover { color: #fff; }
 QRadioButton::indicator {   }
@@ -423,11 +423,10 @@ QPushButton
   background-color: #141518;
   border-radius: 0px;
   color: #cfcfcf;
-  padding: 2px;
+  padding: 4px 8px;
   min-width: 70px;
 }
 QPushButton::menu-indicator { subcontrol-origin: padding; subcontrol-position: bottom right; bottom: 4px; }
-
 QPushButton:default { border: 1px solid #284c93; background: #333538; }
 QPushButton:hover { color: #fff; border: 1px solid #284c93; background: #1E2023; }
 QPushButton:disabled { background: #646464; border: 1px solid #646464; color: #3D3D3D; }
@@ -440,7 +439,7 @@ QPushButton:checked:disabled { border: 1px solid #CFCFCF; color: #000; }
 QPushButton[styleclass="calcButton"] { min-width: auto; }
 QPushButton[styleclass="autoWidth"] { min-width: auto; }
 
-/*Toggle Style*/
+/* Toggle Style: Used in Print dialogs for styling the orientation buttons */
 QPushButton[class="toggle"]:!checked { border: 1px solid #1E2023; background: #434343; min-width: auto;}
 QPushButton[class="toggle"]:checked { border: 1px solid #1E2023; background: #000; min-width: auto; }
 
@@ -449,7 +448,6 @@ QDialogButtonBox > QPushButton
 {
   background: #1e2023;
   border: 1px solid #4a4a4a;
-  border-style:
   border-radius: 1px;
   padding: 4px 8px;
   min-width: 70px;
@@ -488,7 +486,7 @@ QToolButton
   background-color: #1e2023;
   border-radius: 0px;
   color: #cfcfcf;
-  min-height: 22px;
+  /* min-height: 22px; */
   min-width: 22px;
   /* The subcontrols below are used only in the DelayedPopup mode */
   /* The subcontrols below are used only in the MenuButtonPopup mode */
@@ -524,14 +522,11 @@ QToolButton[styleclass="autoWidth"] { width: auto; }
 QToolBar { spacing: 0px; font: 11px; }
 QToolBar::handle { }
 QToolBar::separator { width: 1px; background: #cfcfcf; }
-QToolBar QToolButton { /* min-width: 60px; */ min-height: 22px; padding: 0 5px; font: 11px; border: none; }
+QToolBar QToolButton { min-height: 22px; padding: 0 5px; font: 11px; border: none; }
 
 QToolBarExtension { background: url(":/images/svg_icons/dark/arrow_down.svg") left center no-repeat; }
 QToolBarExtension:hover { border: 0px;  }
 QToolBarExtension:selected { }
-
-QToolBar QToolButton { styleclass="" }
-
 
 /* ------------------------------------------------------------------------ */
 /* INPUTS - NO FIELDS ----------------------------------------------------- */
@@ -576,7 +571,7 @@ QSlider:disabled {  }
 QSlider:focus {  }
 
 /* Horizontal --- */
-QSlider::groove:horizontal { background: none; border: 1px solid #646464; height: 4px; margin: 2 0px; border-radius: 0px; }
+QSlider::groove:horizontal { background: none; border: 1px solid #646464; height: 4px; margin: 2px 0; border-radius: 0px; }
 QSlider::sub-page:horizontal { background: #000; height: 4px; margin: 0px; border-radius: 0px; }
 QSlider::sub-page:horizontal:disabled { background: #646464; }
 QSlider::handle:horizontal { background: #646464; border: 1px solid #adadad; width: 8px; height: 8px; margin: -8px 0; border-radius: 0px; }
@@ -644,7 +639,7 @@ QTabBar::tab:top
 QTabBar::tab:top:selected:disabled {  }
 QTabBar::tab:top:!selected:disabled {  }
 
-QTabBar::tab:top:selected { background-color: ##3b3f40; margin-bottom: -1px; }
+QTabBar::tab:top:selected { background-color: #3b3f40; margin-bottom: -1px; }
 QTabBar::tab:top:selected:hover { background-color: #4d4f52; }
 
 QTabBar::tab:top:!selected {  margin-left: 0px; margin-top: 4px; background-color: #333538;  }
@@ -694,25 +689,24 @@ https://doc.qt.io/qt-5/stylesheet-examples.html#customizing-qheaderview
 QHeaderView { padding: 0px; margin-right: 0px; height: 20px; border: none; }
 QHeaderView:disabled { background-color: #646464; border: 1px transparent #32414B; padding: 1px; }
 
-/* Horizontal */en
+/* Horizontal */
 QHeaderView::section { border: none; }
 QHeaderView::section::horizontal { color: #cfcfcf; background: #000; border: 1px solid #4a4a4a; padding: 0px 5px; }
 QHeaderView::section::horizontal:selected,
-QHeaderView::section::horizontal:checked {  }
+QHeaderView::section::horizontal:checked { }
 QHeaderView::section::horizontal:disabled { }
 QHeaderView::section::horizontal:hover { background: #333538; }
 QHeaderView::up-arrow { width: 12px; image: url(":/images/svg_icons/dark/arrow_up.svg"); }
 QHeaderView::down-arrow { width: 12px; image: url(":/images/svg_icons/dark/arrow_down.svg"); }
 
 /* Vertical */
-QHeaderView::section { border: none; }
-QHeaderView::section::vertical { color: #cfcfcf; background: #000; border: 1px solid #4a4a4a; }
+QHeaderView::section::vertical { color: #cfcfcf; background: #000; border: 1px solid #4a4a4a; qproperty-defaultAlignment: AlignHCenter; background: red; }
 QHeaderView::section::vertical:selected,
 QHeaderView::section::vertical:checked { background: #284c93;  }
 QHeaderView::section::vertical:hover { background: #333538; }
 QHeaderView::section::vertical:disabled { }
 
-/*Used for table view horintonal headers, which need to be vertically aligned*/
+/*Used for table view horizontal headers, which need to be vertically aligned */
 QHeaderView[styleclass="treeViewHeader"]::section::horizontal{ color: #cfcfcf; background: #000; border: 1px solid #4a4a4a;  padding: 5px 5px; }
 
 /* Hyperlinks(HTML) inside QLabel and QInputText --- */
@@ -727,7 +721,7 @@ QTreeView:branch:hover { }
 /* Branch --- */
 QTreeView::branch:has-siblings:adjoins-item { background: url(":/images/svg_icons/dark/tree_open.svg") center center no-repeat; }
 QTreeView::branch:has-siblings:!adjoins-item {  }
-QTreeView::branch:has-siblings:adjoins-item { background: url("") center center repeat-y;  }
+QTreeView::branch:has-siblings:adjoins-item { background: url("") center center repeat-y; }
 QTreeView::branch:!has-children:!has-siblings:adjoins-item {  }
 QTreeView::branch:has-children:!has-siblings:closed,
 QTreeView::branch:closed:has-children:has-siblings { background: url(":/images/svg_icons/dark/tree_open.svg") center center no-repeat;  }
@@ -754,7 +748,7 @@ QListView::item:pressed,
 QTableView::item:pressed,
 QColumnView::item:pressed { }
 
-QTableView:disabled { color: #646464; gridline-color: #1E2023; } /* this was solving no style for disable texts inside lists */
+QTableView:disabled { color: #646464; gridline-color: #1E2023; }
 
 QTreeView::item:disabled,
 QListView::item:disabled,
