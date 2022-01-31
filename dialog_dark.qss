@@ -539,7 +539,6 @@ QWidget > QGroupBox > QComboBox
 {
   border: 1px solid #4a4a4a;
   padding: 0px 2px 2px 2px;
-  /* min-height: 16px; */
   background: #000;
   border-radius: 1px;
   color: #cfcfcf;
@@ -617,10 +616,10 @@ QTabWidget > QWidget {
   border: 0px;
   padding: 0px;
   margin: 0px;
-  color: #cfcfcf;
+  color: #CFCFCF;
 }
 QTabWidget::tab-bar { top: 1px; }
-QTabWidget::pane { border: 1px solid #646464; background: ##3b3f40; }
+QTabWidget::pane { border: 1px solid #646464; background: #3b3f40; }
 QTabBar { qproperty-drawBase: 0; }
 QTabBar::close-button { image: url(""); }
 QTabBar::close-button:hover { image: url(""); }
@@ -686,11 +685,11 @@ https://doc.qt.io/qt-5/stylesheet-examples.html#customizing-qtableview
 /* QHeaderView ------------------------------------------------------------
 https://doc.qt.io/qt-5/stylesheet-examples.html#customizing-qheaderview
 --------------------------------------------------------------------------- */
-QHeaderView { padding: 0px; margin-right: 0px; height: 20px; border: none; }
+QHeaderView { padding: 0px; margin-right: 0px; height: 20px; border: none; qproperty-defaultAlignment: AlignHCenter; }
 QHeaderView:disabled { background-color: #646464; border: 1px transparent #32414B; padding: 1px; }
+QHeaderView::section { border: none; }
 
 /* Horizontal */
-QHeaderView::section { border: none; }
 QHeaderView::section::horizontal { color: #cfcfcf; background: #000; border: 1px solid #4a4a4a; padding: 0px 5px; }
 QHeaderView::section::horizontal:selected,
 QHeaderView::section::horizontal:checked { }
@@ -700,7 +699,7 @@ QHeaderView::up-arrow { width: 12px; image: url(":/images/svg_icons/dark/arrow_u
 QHeaderView::down-arrow { width: 12px; image: url(":/images/svg_icons/dark/arrow_down.svg"); }
 
 /* Vertical */
-QHeaderView::section::vertical { color: #cfcfcf; background: #000; border: 1px solid #4a4a4a; qproperty-defaultAlignment: AlignHCenter; background: red; }
+QHeaderView::section::vertical { color: #cfcfcf; background: #000; border: 1px solid #4a4a4a; }
 QHeaderView::section::vertical:selected,
 QHeaderView::section::vertical:checked { background: #284c93;  }
 QHeaderView::section::vertical:hover { background: #333538; }
