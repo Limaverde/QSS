@@ -136,25 +136,28 @@ QCheckBox
 {
   color: #cfcfcf;
   spacing: 5px;
-  background: none;
+  background-color: rgba(80, 80, 80, 0); /* Hack to bypass QT outline color in dark theme */
 }
 QCheckBox:disabled { color: #646464; }
 QCheckBox:hover { color: #fff; }
-QCheckBox:focus { border: 1px dashed #cfcfcf; outline: none; }
+QCheckBox:focus { color: #fff; }
+QCheckBox:pressed { outline: none; }
+QCheckBox:checked { color: #fff; }
+
 QCheckBox QWidget:disabled { }
 
 QCheckBox::indicator { height: 12px; width: 12px; border: 1px solid #646464; background:#000; border-radius: 2px; }
 
 QCheckBox::indicator:unchecked { }
 QCheckBox::indicator:unchecked:hover { border: 1px solid #284c93; }
-QCheckBox::indicator:unchecked:focus { }
+QCheckBox::indicator:unchecked:focus { border: 1px solid #284c93; }
 QCheckBox::indicator:unchecked:pressed { }
 QCheckBox::indicator:unchecked:disabled { border: 1px solid #646464; background:#646464; }
 
 QCheckBox::indicator:checked { image:url(":/images/svg_icons/dark/checkbox_check.svg"); }
 QCheckBox::indicator:checked:hover { border: 1px solid #284c93; }
-QCheckBox::indicator:checked:focus,
-QCheckBox::indicator:checked:pressed {  }
+QCheckBox::indicator:checked:focus { border: 1px solid #284c93; }
+QCheckBox::indicator:checked:pressed { }
 QCheckBox::indicator:checked:disabled { border: 1px solid #646464; background:#646464; }
 
 QCheckBox::indicator:indeterminate:disabled { border: 1px solid #646464; }
@@ -184,7 +187,7 @@ QGroupBox[styleclass="noPadding"],
 QStackedWidget > QWidget > QGroupBox[styleclass="noPadding"] { padding: 0px; }
 
 QGroupBox::title { subcontrol-origin: margin;subcontrol-position:top left; left:0; padding:0; }
-QGroupBox::indicator {   }
+QGroupBox::indicator { }
 QGroupBox::indicator:unchecked { border: 1px solid #000; }
 QGroupBox::indicator:unchecked:hover,
 QGroupBox::indicator:unchecked:focus,
@@ -202,32 +205,33 @@ https://doc.qt.io/qt-5/stylesheet-examples.html#customizing-qradiobutton
 --------------------------------------------------------------------------- */
 QRadioButton
 {
-  background: none;
   color: #CFCFCF;
   spacing: 4px;
   padding: 0px;
   margin: 0px;
   border: none;
-  outline: none;
   margin-left: -1px;
+  background-color: rgba(80, 80, 80, 0); /* Hack to bypass QT outline color in dark theme */
 }
 QRadioButton:disabled { color: #646464; }
 QRadioButton:hover { color: #fff; }
-/* QRadioButton:focus { border: 1px solid #cfcfcf; } */
-QRadioButton:pressed { border: none; }
+QRadioButton:focus { color: #fff; }
+QRadioButton:pressed { outline: none; }
+QRadioButton:checked { outline: none; color: #fff; }
 
-QRadioButton::indicator {   }
+QRadioButton::indicator { }
 QRadioButton::indicator:unchecked { image:url(":/images/svg_icons/dark/radio_uncheck.svg"); }
 QRadioButton::indicator:unchecked:hover { image:url(":/images/svg_icons/dark/radio_uncheck_hover.svg"); }
-QRadioButton::indicator:unchecked:focus,
-QRadioButton::indicator:unchecked:pressed { border: 0px; }
+QRadioButton::indicator:unchecked:focus { image:url(":/images/svg_icons/dark/radio_uncheck_hover.svg"); }
+QRadioButton::indicator:unchecked:pressed { }
 QRadioButton::indicator:unchecked:disabled { image:url(":/images/svg_icons/dark/radio_uncheck_disable.svg"); }
 
 QRadioButton::indicator:checked { image:url(":/images/svg_icons/dark/radio_check.svg"); }
 QRadioButton::indicator:checked:hover { image:url(":/images/svg_icons/dark/radio_check_hover.svg"); }
-QRadioButton::indicator:checked:focus,
-QRadioButton::indicator:checked:pressed { border: 0px;  }
+QRadioButton::indicator:checked:focus { image:url(":/images/svg_icons/dark/radio_check_hover.svg"); }
+QRadioButton::indicator:checked:pressed { }
 QRadioButton::indicator:checked:disabled { image:url(":/images/svg_icons/dark/radio_check_disable.svg"); }
+
 
 /* Style created to fix issues when radio are in line */
 QRadioButton[styleclass="inLineRadio"] { margin-right: 6px; }
