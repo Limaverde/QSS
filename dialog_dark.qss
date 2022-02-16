@@ -176,9 +176,10 @@ QStackedWidget > QWidget > QGroupBox
   border-top: 2px solid #1E2023;
   font: bold;
   font-size: 14px;
-  margin-top: 18px;
   color: #cfcfcf;
-  padding: 10px 0 0 0;
+  margin: 18px 0 0 0;
+  /*padding: 10px 0 0 0; */
+  padding: 0px;
 }
 QGroupBox[styleclass="noTopMargin"],
 QStackedWidget > QWidget > QGroupBox[styleclass="noTopMargin"] { margin-top: 0px; }
@@ -219,7 +220,7 @@ QRadioButton:focus { color: #fff; }
 QRadioButton:pressed { }
 QRadioButton:checked { color: #fff; }
 
-QRadioButton::titleLabel { background: red; }
+QRadioButton::titleLabel { }
 QRadioButton::indicator { }
 QRadioButton::indicator:unchecked { image:url(":/images/svg_icons/dark/radio_uncheck.svg"); }
 QRadioButton::indicator:unchecked:hover { image:url(":/images/svg_icons/dark/radio_uncheck_hover.svg"); }
@@ -324,7 +325,6 @@ QTextEdit:disabled { color: #cfcfcf; }
 
 /* Workaround for Advanced Attribute Edit Dialog */
 QTableWidget QTextEdit[styleclass='noBorder'] { border: 0px; }
-/* --- */
 
 /* QPlainTextEdit ---------------------------------------------------------
 --------------------------------------------------------------------------- */
@@ -349,10 +349,19 @@ QAbstractSpinBox
   padding-bottom: 2px;
   padding-left: 4px;
   border-radius: 1px;
-  min-height: 16px;
+  /*min-height: 16px;*/
   background: #000;
 }
-
+/* CFxQtUnitSpinBox {
+  border: 1px solid #4a4a4a;
+  color: #cfcfcf;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 4px;
+  border-radius: 1px;
+  min-height: 16px;
+  background: red;
+} */
 /* Workaround to make spinboxes looks like an input (????) -------- */
 /* Dialog example: Patternhatch, breakline  -------- */
 QAbstractSpinBox[buttonSymbols="2"] { padding: 0px; padding-right: -20px; }
@@ -435,6 +444,7 @@ QPushButton
   /* min-height: 20px; */
 }
 QPushButton::menu-indicator { subcontrol-origin: padding; subcontrol-position: bottom right; bottom: 4px; }
+
 QPushButton:default { border: 1px solid #284c93; background: #333538; }
 QPushButton:hover { color: #fff; border: 1px solid #284c93; background: #1E2023; }
 QPushButton:disabled { background: #646464; color: #3D3D3D; }
@@ -460,7 +470,10 @@ QDialogButtonBox > QPushButton
   padding: 4px 8px;
   min-width: 70px;
 }
+QDialogButtonBox > QPushButton:default { border: 1px solid #284c93; background: #1e2023; outline: none; }
 QDialogButtonBox > QPushButton:disabled { background: #333538; color: #3D3D3D; }
+QDialogButtonBox > QPushButton:focus { border: 1px solid #284c93; background: #1E2023; outline: none; }
+
 QDialog[class="CFxDialog"] > QPushButton:disabled { background: none; color: #3D3D3D; }
 
 /* ---
@@ -614,7 +627,8 @@ QLineEdit[styleclass="ga_input"] { background: #fff; }
 QLineEdit[styleclass="ga_input"][error=false] { background: #fff; }
 QLineEdit[error=true] { background: #960A0A; }
 
-QComboBox > QLineEdit  {  background: red; padding: 0; border: 0 ; }
+QComboBox > QLineEdit  { padding: 0; border: 0 ; }
+QTableView QLineEdit { padding: 0; margin: 0; border: 0; }
 
 
 /* QTabWiget, QTabBar  --------------------------------------------------------------
