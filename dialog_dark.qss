@@ -706,6 +706,10 @@ https://doc.qt.io/qt-5/stylesheet-examples.html#customizing-qlistview
 https://doc.qt.io/qt-5/stylesheet-examples.html#customizing-qtableview
 --------------------------------------------------------------------------- */
 
+/* Fixing list view itens for CUI - Dialog -- */
+QListView[styleclass="lightIcons"] { background: #FFFFFF; }
+QListView[styleclass="darkIcons"] { background: #333538; }
+
 /* QHeaderView ------------------------------------------------------------
 https://doc.qt.io/qt-5/stylesheet-examples.html#customizing-qheaderview
 --------------------------------------------------------------------------- */
